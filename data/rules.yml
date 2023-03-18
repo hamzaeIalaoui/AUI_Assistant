@@ -11,43 +11,37 @@ rules:
   steps:
   - intent: bot_challenge
   - action: utter_iamabot
-
-# - rule: Give the van schedule
-#   steps:
-#   - intent: van
-#   - action: utter_van
-
-# - rule: Give events happening
-#   steps:
-#   - intent: event
-#   - action: utter_event
-
-# - rule: Give the office hours
-#   steps:
-#   - intent: office_hours
-#   - action: utter_office_hours
-
-# - rule: Give the opening hours
-#   steps:
-#   - intent: opening_hours
-#   - action: utter_opening_hours
-
-- rule: Give the van schedule
-  steps:
-  - intent: van
-  - action: action_van
-
+  
 - rule: Give events happening
   steps:
   - intent: event
   - action: action_event
+
+ - rule: Give the navitation
+   steps:
+   - intent: navigation
+   - action: action_navigation
+
+
 
 - rule: Give the office hours
   steps:
   - intent: office_hours
   - action: action_office_hours
 
+- rule: Give general information
+  steps:
+  - intent: general_information
+  - action: general_info
+
+
 - rule: Give the opening hours
   steps:
   - intent: opening_hours
   - action: action_opening_hours
+
+
+- rule: Give the academic calendar
+  steps:
+  - intent: academic_calendar
+  - action: action_academic_calendar

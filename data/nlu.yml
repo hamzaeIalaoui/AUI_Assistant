@@ -3,6 +3,11 @@ version: "3.1"
 nlu:
 - intent: greet
   examples: |
+    - salam
+    - salam alikom
+    - salam alaykom
+    - marhaban
+    - marhaba
     - hey
     - hello
     - hi
@@ -29,11 +34,16 @@ nlu:
     - see you around
     - bye bye
     - see you later
+    - byeeeeee
+    - byee
 
 - intent: affirm
   examples: |
     - yes
     - y
+    - ya
+    - yeah
+    - yees
     - indeed
     - of course
     - that sounds good
@@ -43,6 +53,10 @@ nlu:
   examples: |
     - no
     - n
+    - nnnn
+    - nah
+    - naaah
+    - nooooo
     - never
     - I don't think so
     - don't like that
@@ -91,28 +105,6 @@ nlu:
     - am I talking to a human?
 
 
-- intent: van
-  examples: |
-    - How long until the next van arrives?
-    - Is the van running on schedule?
-    - Is the bus running on schedule?
-    - What time can I expect the van to arrive?
-    - When can I catch the next van?
-    - What's the ETA of the van?
-    - Can you give me an update on the van schedule?
-    - When is the next van due to arrive?
-    - When is the next van leaving?
-    - What time does the van come around?
-    - Can you tell me the arrival time of the van?
-    - How much longer until the van gets here?
-    - Is the van on its way?
-    - Can you check when the van will arrive?
-    - What's the schedule for the van?
-    - When can I expect the van to show up?
-    - What's the estimated time of arrival for the van?
-    - Can you give me an update on the van arrival time?
-
-  
 - intent: event
   examples: |
     - What events are happening on campus this week?
@@ -133,6 +125,68 @@ nlu:
     - What's the theme or focus of the [specific event] happening on campus?
     - How can I get tickets or RSVP for events happening on campus?
     - What's the turnout like for events happening on campus?
+
+- intent: navigation
+  examples: |
+    - Can you tell me where the Dean of Student Affairs (DSA) office is located?
+    - Where can I find the Student Activities Office (SAO)?
+    - Can you provide me with the location of the Mohammed VI Library?
+    - Where is the Service Desk (SD) located?
+    - Can you tell me where the laundry services are located?
+    - Where can I find the Housing Department?
+    - Can you provide me with the location of the Counseling office?
+    - Where is the Health Center located?
+    - Where can I find the Physical Therapy services?
+    - Can you tell me where I can find Insurance services?
+    - Where is the Housing Services and Residence Life office located?
+    - Can you provide me with the location of the Information Technology Services (ITS)?
+    - Where can I find the Center for Learning Excellence (CLE)?
+    - Can you tell me where the Writing Center is located?
+    - Where is the University Honors Program office located?
+    - Can you provide me with the location of DeviTeam?
+    - Where can I find the Restaurant/International Restaurant?
+    - Can you tell me where the Dentist office is located?
+    - Where is NeoCedrus located?
+    - Can you provide me with the location of The Club House/Proxy/Proxyrest?
+    - Where can I find The Grill?
+    - Can you tell me where The Italian Restaurant/Pizzeria is located?
+    - Where is The Café/Cafeteria located?
+    - Can you provide me with the location of the Security Department?
+    - Where can I find the Admissions office?
+    - Can you tell me where the Registrar's office/Enrollment office is located?
+    - Where is the Office of Employability and Entrepreneurship located?
+    - Can you provide me with the location of Startup Olympus/Incubator?
+    - Where can I find the President's office?
+    - Can you tell me where the Tennis Court is located?
+    - Where is the Football field/Soccer field located?
+    - Can you provide me with the location of the GYM?
+    - Where can I find the Basketball Court?
+    - Can you tell me where the ATM is located?
+    - Where is the Post Office located?
+    - Can you provide me with the location of the Center for Awareness, Responsiveness, and Empowerment (CARE)?
+    - Where can I find the Vice President of Academic Affairs (VPSA) office?
+    - Can you tell me where the Labs are located?
+    - Where is the Solarium/Linux Lab located?
+    - Can you provide me with the location of the Athletics Department?
+    - Where can I find the Game Room?
+    - Can you tell me where the Event Room is located?
+    - Where is the Swimming Pool located?
+    - Can you provide me with the location of the Martial Arts Room?
+    - Where can I find the Bikes Renting service?
+    - Can you tell me where the Active Learning Spaces (ALS) are located?
+    - Where is the First-Year Experience (FYE) office located?
+    - Can you provide me with the location of the Business Office?
+    - Where can I find the Financial Aid Office?
+    - Can you tell me where the Mosque is located?
+    - Where is the Shop located?
+    - Can you provide me with the location of the Faculty Lounge?
+    - Where is the Presidential Interns Office located?
+    - Can you tell me where the Board Room is located?
+    - Where is Dev&Com/Dev and Com located?
+
+
+ 
+
 
 - intent: office_hours
   examples: |
@@ -157,6 +211,115 @@ nlu:
     - Can you give me the contact information for Professor [Name] during their office hours?
 
 
+- intent: general_information
+  examples: |
+    - Where can I eat in ifrane?
+    - Where can I shop in ifrane?
+    - Where to shop?
+    - Where to eat? 
+    - Where to eat on Ifrane?
+    - Hospitals?
+    - Pharmacies?
+    - Post offices?
+    - Banks?
+    - Local attractions?
+    - Regional attractions?
+    - Local and regional attractions?
+    - are there any hospitals in ifrane?
+    - What hospitals are available in ifrane?
+    - What post offices are there in ifrane?
+    - What banks are there in ifrane?
+    - Where can I find local restaurants in Ifrane?
+    - Can you recommend any good places to eat in Ifrane?
+    - What are the popular shopping destinations in Ifrane?
+    - Where can I buy local souvenirs in Ifrane?
+    - What modes of transportation are available in Ifrane?
+    - How can I get from the airport to my hotel in Ifrane?
+    - Are there any hospitals near the city center of Ifrane?
+    - Can you recommend a pharmacy that's open 24/7 in Ifrane?
+    - Where is the nearest post office in Ifrane?
+    - Which banks have branches in Ifrane?
+    - What are some popular local attractions in Ifrane?
+    - Are there any must-see regional attractions near Ifrane?
+    - What are some family-friendly attractions in Ifrane?
+    - What are the most popular natural attractions in Ifrane?
+    - Can I schedule an appointment at the health center?
+    - What services are offered at the health center?
+    - What are the operating hours of the health center?
+    - Is there a nurse on staff at the health center?
+    - How can I contact the health center in case of an emergency?
+    - Is physical therapy available on campus?
+    - How can I schedule an appointment for physical therapy?
+    - What conditions does the physical therapy clinic treat?
+    - Is physical therapy covered by student health insurance?
+    - How long is a typical physical therapy session?
+    - What type of insurance do I need as a student?
+    - Is there a student health insurance plan offered by the university?
+    - What does the student health insurance plan cover?
+    - How do I enroll in the student health insurance plan?
+    - What other insurance options are available to students?
+    - Is there a counseling center on campus?
+    - How can I schedule an appointment with a counselor?
+    - What types of counseling services are offered?
+    - Is there a cost for counseling services?
+    - How do I know if counseling is right for me?
+    - What types of campus transportation are available?
+    - Is there a shuttle service between campuses?
+    - How do I get to off-campus locations from campus?
+    - What are the hours of operation for campus transportation?
+    - Is there a cost for using campus transportation?
+    - What are the parking regulations on campus?
+    - Is a parking permit required to park on campus?
+    - What are the consequences for parking violations?
+    - Are there any restrictions on driving on campus?
+    - How can I report a dangerous driver on campus?
+    - What is the No Violence Alliance (NoVA)?
+    - What resources does NoVA provide to students?
+    - How can I get involved with NoVA?
+    - What are the signs of relationship violence or abuse?
+    - Who can I contact for help if I experience relationship violence or abuse?
+    - What housing options are available for students?
+    - How do I apply for on-campus housing?
+    - What is the cost of on-campus housing?
+    - What is included in the on-campus housing fee?
+    - What are the move-in and move-out dates for on-campus housing?
+    - Where are the laundry facilities on campus?
+    - How much does it cost to use the laundry facilities?
+    - What type of payment is accepted for laundry services?
+    - Are the laundry facilities open 24/7?
+    - What do I do if a machine is broken or not working properly?
+    - What dining options are available on campus?
+    - Are there any vegetarian or vegan options at the dining halls?
+    - How do I use my meal plan?
+    - What happens if I run out of meal plan money?
+    - Can I request a special accommodation for dietary restrictions?
+    - What IT services are available to students?
+    - How do I access the campus Wi-Fi?
+    - What do I do if my computer is not working properly?
+    - Is there technical support available for students?
+    - How do I reset my password for campus?
+    - What is the phone number for the Health Center?
+    - Can you give me the phone number for the Physical Therapy office?
+    - What is the phone number for the Service Desk?
+    - Can you tell me the phone number for the Center for Learning Excellence?
+    - What is the phone number for the Writing Center?
+    - Can you give me the phone number for the University Honors Program?
+    - What is the phone number for the Mohammed VI Library?
+    - Can you tell me the phone number for the Housing Services and Residence Life office?
+    - What is the phone number for the Laundry Services office?
+    - Can you give me the phone number for the Dining Services office?
+    - What is the phone number for the Information Technology Services (ITS) office?
+    - Can you tell me the phone number for the Counseling office?
+    - What is the phone number for the Insurance office?
+    - Can you give me the phone number for the Campus Transportation office?
+    - What is the phone number for the Driving Regulations office?
+    - Can you tell me the phone number for the Hospitals in Ifrane?
+    - What is the phone number for the Pharmacies in Ifrane?
+    - Can you give me the phone number for the Post-offices in Ifrane?
+    - What is the phone number for the Banks in Ifrane? 
+
+ 
+ 
 - intent: opening_hours
   examples: | 
     - What are the library's opening hours?
@@ -179,4 +342,85 @@ nlu:
     - When does the campus technology help desk open and close?
     - What are the opening hours of the campus security office?
     - When does the university financial aid office open and close?
+    - When is the Mohammed VI Library open?
+    - What are the hours of operation for the Mohammed VI Library?
+    - Can you tell me when the library opens and closes?
+    - What time does the Mohammed VI Library close today?
+    - What are the library's hours for the weekend?
+    - When does the Service Desk open?
+    - What time does the Service Desk start answering calls?
+    - What are the Service Desk's hours of operation?
+    - Can you give me the Service Desk's schedule?
+    - What time does the Service Desk close on Fridays?
+    - What are the hours for Laundry Services?
+    - When can I do my laundry on campus?
+    - Is the laundry room open 24/7?
+    - Can you tell me when the laundry machines are available?
+    - What time does the laundry facility close on Sundays?
+    - What are the hours for Housing Services?
+    - When is the Housing Services office open?
+    - Can you tell me when the Housing Services desk opens and closes?
+    - What time does the Housing Services office close on Wednesdays?
+    - What are the Housing Services office hours on weekends?
+    - When is No Violence Alliance (NoVA) open?
+    - What are the operating hours for NoVA?
+    - Can you tell me when NoVA is available?
+    - What time does NoVA start taking calls?
+    - What are NoVA's hours for the week?
+    - When is Counseling open?
+    - What are the hours of operation for Counseling?
+    - Can you tell me when the Counseling office is available?
+    - What time does Counseling start seeing patients?
+    - What are Counseling's hours for the semester?
 
+
+
+- intent: van
+  examples: |
+    - How long until the next van arrives?
+    - Is the van running on schedule?
+    - Is the bus running on schedule?
+    - What time can I expect the van to arrive?
+    - When can I catch the next van?
+    - What's the ETA of the van?
+    - Can you give me an update on the van schedule?
+    - When is the next van due to arrive?
+    - When is the next van leaving?
+    - What time does the van come around?
+    - Can you tell me the arrival time of the van?
+    - How much longer until the van gets here?
+    - Is the van on its way?
+    - Can you check when the van will arrive?
+    - What's the schedule for the van?
+    - When can I expect the van to show up?
+    - What's the estimated time of arrival for the van?
+    - Can you give me an update on the van arrival time?
+
+  
+
+- intent: academic_calendar
+  examples: |
+    - When does the Winter Intersession Program start?
+    - Can you tell me when the Winter Intersession Program ends?
+    - Is there a holiday during the Winter Intersession Program?
+    - What is the date of the General Faculty Convocation?
+    - When is New and International Students Registration?
+    - Can you give me the schedule for the New Students Orientation Program?
+    - When does Continuing Student Registration begin?
+    - What is the first day of Late Registration?
+    - Can you tell me when the First Day to Add/Drop courses is?
+    - What is the Last Day to Revise Schedule?
+    - When is the Last Day of Late Registration?
+    - When is Spring Break for students and faculty?
+    - Can you tell me when the Mid-Semester evaluations are due?
+    - What is the Last Day to Drop a Course with "W"?
+    - When is the Mandatory Pre-registration for Summer and Fall 2023?
+    - Can you give me the deadline for the Last Day to Drop a Course with a "WP" or "WF"?
+    - When is the Last day for graduate students to register for project/thesis defense?
+    - Can you tell me the date of the Aid Al Fitr holiday?
+    - What is the deadline for students to Withdraw from the University?
+    - When is the Labor Day holiday?
+    - Can you give me the date of the Last Regular Class Day?
+    - What is the schedule for the Review Day?
+    - When are the Final Exams scheduled to take place?
+    - Can you tell me the date of the Final Day for Faculty to Submit Semester Grades?

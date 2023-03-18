@@ -158,7 +158,6 @@ class ActionOpeningHours(Action):
 
         dispatcher.utter_message(text=chat_response(system, latest_message))
         return []
-<<<<<<< HEAD
     
     
 message = client.messages.create(
@@ -168,7 +167,6 @@ message = client.messages.create(
 )
 
 print(message.sid)
-=======
 
 
 class ActionAcademicCalendar(Action):
@@ -229,4 +227,3 @@ def chat_response(system, latest_message):
         ],
     )
     return response["choices"][0]["message"]["content"].strip()
->>>>>>> 0ce9e39129281094be40610b017d633b5640ba41
