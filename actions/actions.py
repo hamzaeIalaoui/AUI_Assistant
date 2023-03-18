@@ -1,12 +1,12 @@
 from typing import Any, Text, Dict, List
-
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
 from rasa_sdk.events import SlotSet
-
 import openai
 import gspread
 from oauth2client.service_account import ServiceAccountCredentials
+
+
 
 model = "gpt-3.5-turbo"
 sheet_id = "1bhCpAd0v0cN9DQe_OOaG8sGm8VlH5pNhgpGowR9vVkU"
