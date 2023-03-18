@@ -93,7 +93,7 @@ nlu:
 
 - intent: van
   examples: |
-    - How long until the next van arrives?
+    - How long until the next van arrives from [dt](departure)?
     - Is the van running on schedule?
     - Is the bus running on schedule?
     - What time can I expect the van to arrive?
@@ -111,6 +111,15 @@ nlu:
     - When can I expect the van to show up?
     - What's the estimated time of arrival for the van?
     - Can you give me an update on the van arrival time?
+    - when is the van coming from [al akhawayn university](departure)?
+    - when is the van coming?
+    - when is the van coming at [dt](departure)?
+    - how much time is left for the van?
+    - when can i take the van from [fi](departure)?
+    - when can i take the van from [aui](departure)?
+    - when can i take the van from [akhawayn](departure)?
+    - going from [aui](departure).
+    - what is the earliest van coming?
 
   
 - intent: event

@@ -31,23 +31,37 @@ rules:
 #   steps:
 #   - intent: opening_hours
 #   - action: utter_opening_hours
-
 - rule: Give the van schedule
   steps:
-  - intent: van
-  - action: action_van
+    - intent: van
+    - action: action_van
 
 - rule: Give events happening
   steps:
-  - intent: event
-  - action: action_event
+    - intent: event
+    - action: action_event
 
 - rule: Give the office hours
   steps:
-  - intent: office_hours
-  - action: action_office_hours
+    - intent: office_hours
+    - action: action_office_hours
 
 - rule: Give the opening hours
   steps:
-  - intent: opening_hours
-  - action: action_opening_hours
+    - intent: opening_hours
+    - action: action_opening_hours
+
+- rule: Help user navigate the campus
+  steps:
+    - intent: navigation
+    - action: action_navigation
+
+- rule: Provide general information about the university
+  steps:
+    - intent: general_info
+    - action: action_general_info
+
+- rule: Provide information from academic calendar
+  steps:
+    - intent: academic_calendar
+    - action: action_academic_calendar
