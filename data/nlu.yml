@@ -1,0 +1,182 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+
+- intent: van
+  examples: |
+    - How long until the next van arrives?
+    - Is the van running on schedule?
+    - Is the bus running on schedule?
+    - What time can I expect the van to arrive?
+    - When can I catch the next van?
+    - What's the ETA of the van?
+    - Can you give me an update on the van schedule?
+    - When is the next van due to arrive?
+    - When is the next van leaving?
+    - What time does the van come around?
+    - Can you tell me the arrival time of the van?
+    - How much longer until the van gets here?
+    - Is the van on its way?
+    - Can you check when the van will arrive?
+    - What's the schedule for the van?
+    - When can I expect the van to show up?
+    - What's the estimated time of arrival for the van?
+    - Can you give me an update on the van arrival time?
+
+  
+- intent: event
+  examples: |
+    - What events are happening on campus this week?
+    - Can you tell me about any upcoming events on campus?
+    - Is there anything interesting happening on campus soon?
+    - What's going on at the university this weekend?
+    - Can you give me a list of events happening on campus?
+    - Are there any concerts or performances on campus this month?
+    - What events are open to the public on campus?
+    - Can you tell me about any cultural events happening on campus?
+    - Is there a campus event calendar that I can check?
+    - Are there any academic lectures or workshops coming up on campus?
+    - What social events are happening on campus this semester?
+    - Are there any volunteer opportunities or community service events on campus?
+    - What's the schedule for the [specific event] happening on campus?
+    - Is there a campus event app or website that I can use to keep track of events?
+    - Can you tell me about any sports games or tournaments happening on campus?
+    - What's the theme or focus of the [specific event] happening on campus?
+    - How can I get tickets or RSVP for events happening on campus?
+    - What's the turnout like for events happening on campus?
+
+- intent: office_hours
+  examples: |
+    - When are Professor [Name]'s office hours?
+    - Can you tell me the office hours of [Department] professors?
+    - Is there a list of professors' office hours available?
+    - When can I meet with Professor [Name] during office hours?
+    - What are the office hours for [Course] instructors?
+    - Can you give me the office hours of all the professors in the [Department]?
+    - Is there a specific time for Professor [Name]'s office hours?
+    - How do I schedule an appointment during a professor's office hours?
+    - What are the office hours for professors in the [Major] department?
+    - When can I expect Professor [Name] to be in their office during office hours?
+    - Is there a certain day that Professor [Name] holds office hours?
+    - Can you give me the office hours for professors teaching [Course]?
+    - How do I find out when a professor's office hours are?
+    - What are the office hours for visiting professors on campus?
+    - When can I meet with Professor [Name] if I can't make their office hours?
+    - Is it necessary to make an appointment during a professor's office hours?
+    - Can you tell me when Professor [Name] is available during office hours?
+    - What's the best way to contact a professor outside of their office hours?
+    - Can you give me the contact information for Professor [Name] during their office hours?
+
+
+- intent: opening_hours
+  examples: | 
+    - What are the library's opening hours?
+    - Can you tell me the opening hours of the gym?
+    - When does the university health center open?
+    - Is the campus bookstore open on weekends?
+    - What are the opening hours of the student services office?
+    - When does the computer lab open and close?
+    - Can you tell me when the campus cafeteria is open?
+    - Is there a specific time when the parking office opens and closes?
+    - What are the opening hours of the student union building?
+    - Can you tell me when the university admissions office is open?
+    - When does the tutoring center open and close?
+    - What time does the university mailroom open?
+    - Can you tell me when the campus career center is open?
+    - When are the campus coffee shops open?
+    - What are the opening hours of the university research center?
+    - Is the campus shuttle service available on weekends? What are the hours?
+    - Can you tell me the opening hours of the university art gallery?
+    - When does the campus technology help desk open and close?
+    - What are the opening hours of the campus security office?
+    - When does the university financial aid office open and close?
+

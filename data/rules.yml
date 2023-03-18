@@ -1,0 +1,53 @@
+version: "3.1"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+# - rule: Give the van schedule
+#   steps:
+#   - intent: van
+#   - action: utter_van
+
+# - rule: Give events happening
+#   steps:
+#   - intent: event
+#   - action: utter_event
+
+# - rule: Give the office hours
+#   steps:
+#   - intent: office_hours
+#   - action: utter_office_hours
+
+# - rule: Give the opening hours
+#   steps:
+#   - intent: opening_hours
+#   - action: utter_opening_hours
+
+- rule: Give the van schedule
+  steps:
+  - intent: van
+  - action: action_van
+
+- rule: Give events happening
+  steps:
+  - intent: event
+  - action: action_event
+
+- rule: Give the office hours
+  steps:
+  - intent: office_hours
+  - action: action_office_hours
+
+- rule: Give the opening hours
+  steps:
+  - intent: opening_hours
+  - action: action_opening_hours
