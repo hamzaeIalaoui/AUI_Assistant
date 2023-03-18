@@ -2,6 +2,7 @@ from typing import Any, Text, Dict, List
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
 from rasa_sdk.events import SlotSet
+
 import openai
 import gspread
 from oauth2client.service_account import ServiceAccountCredentials
@@ -157,6 +158,17 @@ class ActionOpeningHours(Action):
 
         dispatcher.utter_message(text=chat_response(system, latest_message))
         return []
+<<<<<<< HEAD
+    
+    
+message = client.messages.create(
+  from_='whatsapp:+14155238886',
+  body='Your appointment is coming up on July 21 at 3PM',
+  to='whatsapp:+212689262985'
+)
+
+print(message.sid)
+=======
 
 
 class ActionAcademicCalendar(Action):
@@ -217,3 +229,4 @@ def chat_response(system, latest_message):
         ],
     )
     return response["choices"][0]["message"]["content"].strip()
+>>>>>>> 0ce9e39129281094be40610b017d633b5640ba41
