@@ -1,0 +1,20 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-departure",
+      "2": "I-departure",
+      "3": "L-departure",
+      "4": "U-departure",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-departure": 1,
+      "I-departure": 2,
+      "L-departure": 3,
+      "U-departure": 4,
+      "O": 0
+    },
+    "num_tags": 5
+  }
+]
