@@ -105,6 +105,40 @@ nlu:
     - am I talking to a human?
 
 
+<<<<<<< HEAD
+=======
+- intent: van
+  examples: |
+    - How long until the next van arrives from [dt](departure)?
+    - Is the van running on schedule?
+    - Is the bus running on schedule?
+    - What time can I expect the van to arrive?
+    - When can I catch the next van?
+    - What's the ETA of the van?
+    - Can you give me an update on the van schedule?
+    - When is the next van due to arrive?
+    - When is the next van leaving?
+    - What time does the van come around?
+    - Can you tell me the arrival time of the van?
+    - How much longer until the van gets here?
+    - Is the van on its way?
+    - Can you check when the van will arrive?
+    - What's the schedule for the van?
+    - When can I expect the van to show up?
+    - What's the estimated time of arrival for the van?
+    - Can you give me an update on the van arrival time?
+    - when is the van coming from [al akhawayn university](departure)?
+    - when is the van coming?
+    - when is the van coming at [dt](departure)?
+    - how much time is left for the van?
+    - when can i take the van from [fi](departure)?
+    - when can i take the van from [aui](departure)?
+    - when can i take the van from [akhawayn](departure)?
+    - going from [aui](departure).
+    - what is the earliest van coming?
+
+  
+>>>>>>> 49a0e990e388188c0fec93c45ccb25b50656d8ae
 - intent: event
   examples: |
     - What events are happening on campus this week?

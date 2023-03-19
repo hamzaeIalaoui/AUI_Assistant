@@ -12,12 +12,30 @@ intents:
   - office_hours
   - event
   - opening_hours
+  - navigation
+  - general_info
+  - academic_calendar
+
+entities:
+  - departure
 
 actions: 
   - action_van
-  - action_office_hours
   - action_event
+  - action_navigation
+  - action_office_hours
+  - action_general_info
   - action_opening_hours
+  - action_academic_calendar
+
+slots:
+  departure:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: departure
+
 
 responses:
   utter_greet:
